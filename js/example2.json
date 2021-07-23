@@ -1,0 +1,7 @@
+---
+---
+[
+{% for i in (1..80) %}
+    { "url": "../img/matrix/matrix-frame-{{i}}.webp"}{% if forloop.last == false %},{% endif %}
+{% endfor %}
+]

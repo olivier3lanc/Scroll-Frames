@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% endif %} ">
+        {% for stylesheet in page.stylesheets %}
+            {% if stylesheet contains 'https://' or stylesheet contains 'http://' %}
+                <link rel="stylesheet" href="{{ stylesheet }}">
+            {% else %}
+                <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/{{ stylesheet }}">
+            {% endif %}
+        {% endfor %}
+    </head>
+    <body>
+        {{ content }}
+        {% for script in page.scripts %}
+            {% if script contains 'https://' or script contains 'http://' %}
+                <script type="text/javascript" src="{{ script }}"></script>
+            {% else %}
+                <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/{{ script }}"></script>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
