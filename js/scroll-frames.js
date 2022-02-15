@@ -71,7 +71,7 @@ let myScrollFrames = {
                                     // Background image string and background size object
                                     let backgroundImage = '';
                                     let backgroundSizes = [];
-                                    // console.log(json);
+                                    console.log(json);
                                     json.forEach(function(data, index) {
                                         backgroundImage += 'url('+data.url+')';
                                         if (index < json.length - 1) {
@@ -160,6 +160,9 @@ let myScrollFrames = {
                 }
             });
         }
+    },
+    build: function() {
+
     },
     frame: function() {
         // Scan all anims ids
