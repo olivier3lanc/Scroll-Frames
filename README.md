@@ -5,18 +5,14 @@ unlisted: true
 ---
 ```html
 <style>
-    [my-scroll-frames] { 
-        transition: none;
-        background-repeat: no-repeat; 
-        background-size: cover;
-        background-position: center;
-        transition: none;  
-    }
     [my-scroll-frames="second"] { 
         position: sticky;
         top: 0;
     }
-
+    [my-scroll-frames="third"] { 
+        height:600px;
+        margin-bottom: 100vh;
+    }
 </style>
 <p>Scroll down</p>
 <div    my-scroll-frames="first"
@@ -26,12 +22,15 @@ unlisted: true
 </div>
 <div style="height:100vh; margin-bottom:100vh">
     <div    my-scroll-frames="second"
-            my-scroll-frames-detector="second-detector"
+            data-detector="second-detector"
             data-json="../js/example2.json"
             data-timeline="0:0 to 40:0 to 90:100 to 100:100"
             style="height: 500px;">
     </div>
     <div id="second-detector"></div>
+</div>
+<div    my-scroll-frames="third"
+        data-mask="../img/matrix/matrix-frame-|1 to 44|.webp">
 </div>
 ```
 {:.playground title="Demo - Mobile phone mockup and Matrix"}
