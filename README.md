@@ -1,36 +1,31 @@
 ---
-layout: libdoc/page-split
+layout: libdoc/page
 permalink: index.html
 unlisted: true
 ---
+
+Scroll Frames is a javascript library that applies background image from a sequence of images on any HTML tag according to the position of this HTML tag.
+
 ```html
+<p>Scroll down</p>
+<div    scroll-frames="matrix2"
+        data-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-background-size="cover">
+</div>
+<div    scroll-frames="matrix"
+        data-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-detector="det1"
+        data-background-repeat="no-repeat">
+</div>
+<hr id="det1">
 <style>
-    [my-scroll-frames="second"] { 
-        position: sticky;
-        top: 0;
+    [scroll-frames*="matrix"] { 
+        margin-top: 80vh;
+        height: 80vh;
     }
-    [my-scroll-frames="third"] { 
-        height:600px;
+    hr {
         margin-bottom: 100vh;
     }
 </style>
-<p>Scroll down</p>
-<div    my-scroll-frames="first"
-        data-json="../js/macbookpro.json"
-        data-timeline="0:0 to 40:0 to 80:100 to 100:100"
-        style="margin-top: 50vh; height: 80vh;">
-</div>
-<div style="height:100vh; margin-bottom:100vh">
-    <div    my-scroll-frames="second"
-            data-detector="second-detector"
-            data-json="../js/example2.json"
-            data-timeline="0:0 to 40:0 to 90:100 to 100:100"
-            style="height: 500px;">
-    </div>
-    <div id="second-detector"></div>
-</div>
-<div    my-scroll-frames="third"
-        data-mask="../img/matrix/matrix-frame-|1 to 44|.webp">
-</div>
 ```
-{:.playground title="Demo - Mobile phone mockup and Matrix"}
+{:.playground title="Demo"}

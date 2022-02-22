@@ -1,7 +1,0 @@
----
----
-[
-{% for i in (1..85) %}
-    { "url": "https://www.apple.com/105/media/us/macbook-pro-14-and-16/2021/a1c5d17e-d8e4-4fa8-b70a-bc61bd266412/anim/hero-specs//large/large_00{% if i < 10 %}0{% endif %}{{i}}.jpg"}{% if forloop.last == false %},{% endif %}
-{% endfor %}
-]

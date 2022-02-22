@@ -3,8 +3,8 @@
 title: Scroll Frames # title of the documentation
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
   Animate frames on scroll
-#baseurl: "/scroll-frames/_site" # the subpath of your site, e.g. /blog
-#url: "http://localhost" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/scroll-frames/_site" # the subpath of your site, e.g. /blog
+# url: "http://localhost" # the base hostname & protocol for your site, e.g. http://example.com
 #permalink: /:path/:basename/:output_ext
 #destination: ../marcelrent/public/proto-app # Build relative path destination. The destination directory e.g. /blog
 #keep_files: [cache]
@@ -79,7 +79,7 @@ playground:
     # Relative URL from site root starting with slash /
     # Absolute URL starting with 'http'
     scripts_body: # Javascript files near </body>. Can be either relative URL from site root, absolute URL starting with 'http'
-        - /js/ola.min.js
+        # - /js/ola.min.js
         - /js/scroll-frames.js
 
 # Settings for the assets layout
@@ -122,7 +122,7 @@ assets:
 # https://prismjs.com/
 prism:
     # coy, dark, funky, okaidia, twilight, solarizedlight, tomorrow, 
-    theme: tomorrow
+    theme: okaidia
     # CSS font-size property override for <code>
     font_size: 0.9em
     # CSS line-height property override for <code>
@@ -266,7 +266,7 @@ prism:
         #- lolcode
         #- lua
         #- makefile
-        - markdown
+        #- markdown
         # - markup-templating
         #- matlab
         #- mel
@@ -335,7 +335,7 @@ prism:
         #- rust
         #- sas
         #- sass
-        - scss
+        #- scss
         #- scala
         #- scheme
         #- shell-session
@@ -385,7 +385,7 @@ prism:
         # - xml-doc
         #- xojo
         #- xquery
-        - yaml
+        #- yaml
         #- yang
         #- zig
 
