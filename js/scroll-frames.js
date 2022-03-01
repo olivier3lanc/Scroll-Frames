@@ -52,7 +52,7 @@ const scrollFrames = {
                 // Get the anim ID
                 const anim_id = el_anim.getAttribute('scroll-frames');
                 // Get the URL mask
-                const anim_mask_url = el_anim.dataset.mask;
+                const anim_url_mask = el_anim.dataset.urlMask;
                 // Get the JSON URL
                 const anim_json_url = el_anim.dataset.json;
                 // Get the anim timeline
@@ -72,8 +72,8 @@ const scrollFrames = {
                         backgroundSizes: []
                     }
                     // Mask
-                    if (anim_mask_url !== undefined && anim_json_url === undefined) {
-                        const anim_mask_array = anim_mask_url.split('|');
+                    if (anim_url_mask !== undefined && anim_json_url === undefined) {
+                        const anim_mask_array = anim_url_mask.split('|');
                         if (anim_mask_array.length == 3) {
                             const anim_mask_interval = anim_mask_array[1].split(' to ');
                             const anim_mask_i_start = parseInt(anim_mask_interval[0]);
@@ -90,7 +90,7 @@ const scrollFrames = {
                         }
                     }
                     // Test if valid JSON URL
-                    if (anim_json_url !== undefined && anim_mask_url === undefined) {
+                    if (anim_json_url !== undefined && anim_url_mask === undefined) {
                         if (anim_json_url.indexOf('.json') == anim_json_url.length - 5) {
                             // Let's fetch
                             fetch(anim_json_url).then(function(response) {
