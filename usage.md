@@ -129,9 +129,59 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll l
 ```
 {:.playground title="Detector"}
 
-## Timeline
+## Timeline and keyframes
 
-By default, seeking through frames during scroll is linear but it is possible to customize it.
+By default, playback head throughout image sequence is linear during scroll but it is possible to customize it with keyframes. No limitation on amount of keyframes.
+
+```html
+<p>Still frames start changing when element gets 40% (scroll line 0.4) in the viewport and stop when element gets 60% (scroll line 0.6) in the viewport.</p>
+<div    scroll-frames="matrix"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-timeline="0:0 to 40:0 to 60:100 to 100:100">
+</div>
+<style>
+    [scroll-frames="matrix"] { 
+        height: 80vh;
+        margin-top: 80vh;
+        margin-bottom: 80vh;
+        background-color: #F5F5F5;
+    }
+    p {
+        font-family: monospace;
+        font-size: 16px;
+        padding: 1em;
+        margin: 0;
+    } 
+</style>
+```
+{:.playground title="Timeline and keyframes"}
+
+Timeline and keyframes syntax description:
+
+| Syntax | Description |
+|- |- |
+| `[number1]:[number2]` | Definition of a keypoint.|
+|  _number1_ | Percentage of element into the viewport<br>0% means element is entering the viewport<br>100% means element leaves the viewport |
+|  _number2_ | Position percentage of the playback head of the sequence.<br>0% is the first frame<br>100% is the last frame |
+| `[space]to[space]` | Tween link between two keypoints.|
+
+Example
+
+```html
+<!-- Description -->
+<div data-timeline="[number1]:[number2] to [number3]:[number4] to [number5]:[number6] to [number7]:[number8] (...)"></div>
+<!-- Example -->
+<div data-timeline="0:0 to 40:0 to 60:100 to 100:100"></div>
+"0:0" when element is entering viewport, playback head is set at 0%
+" to " links two keypoints
+"40:0" when scroll line of the element is 0.4 (40%), playback head is still set at 0%
+" to " links two keypoints
+"60:100" when scroll line of the element is 0.6 (60%), playback head is set at 100%
+" to " links two keypoints
+"100:100" when scroll line of the element is 1 (100%), playback head is set at 100%
+```
+
+
 
 ## Fit
 
