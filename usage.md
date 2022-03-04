@@ -6,7 +6,35 @@ layout: libdoc/page
 * 
 {:toc}
 
+Scroll Frames can be applied on any HTML element onto which the following CSS properties can be applied: 
+
+* _background-image_
+* _background-position_
+* _background-size_
+* _background-repeat_
+
+## Basic usage
+
+Two attributes are mandatory to make Scroll Frames work.
+
+* `scroll-frames="YOUR_OWN_UNIQUE_ID"` Each instance of Scroll Frames is set with `scroll-frames` attribute containing a unique value that defines the ID of the instance.
+* `data-url-mask` or `data-json` to define the source of still images sequence.
+
+```html
+EXAMPLE WITH URL MASK
+<div    scroll-frames="matrix"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+</div>
+EXAMPLE WITH JSON URL
+<div    scroll-frames="matrix"
+        data-json="https://url.com/path/to/file-containing-urls.json">
+</div>
+```
+
+
 ## URL mask
+
+`data-url-mask` attribute
 
 If applicable, Scroll Frames allows to use a single string of characters to describe a collection of URL.
 
@@ -63,6 +91,8 @@ or
 
 ## JSON
 
+`data-json`
+
 If URL mask is not possible, Scroll Frames supports JSON format. JSON URL can be either relative to current page or absolute.
 
 ```html
@@ -102,7 +132,7 @@ JSON file must be set as follows, each still frame URL can be either absolute or
 
 ## Detector
 
-By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll line value. If `data-detector="ID_OF_ANOTHER_ELEMENT"` is set, Scroll Frames uses the scroll line value of the specified HTML element.
+By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll line value - or its position into the viewport. If `data-detector="ID_OF_ANOTHER_ELEMENT"` is set, Scroll Frames uses the scroll line value of the specified HTML element.
 
 ```html
 <p>Frames change in relation with the position of the `hr` element.</p>
@@ -183,6 +213,59 @@ Example
 
 
 
-## Fit
+## Fit and adjust
 
-Scroll Frames has some settigns dedicated to how the still frames are fit into their container.
+This setting adjusts position of still frames into the element. Scroll Frames changes still frames as CSS background-image. You can customize applicable CSS properties by using the following dedidated data attributes:
+
+| CSS Property | Default value | Data attribute |
+|- |- |- | 
+| _background-position_ | center | data-background-position |
+| _background-repeat_ | no-repeat | data-background-repeat |
+| _background-size_ | contain | data-background-size |
+
+```html
+<p>Default settings</p>
+<div    scroll-frames="matrix1"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+</div>
+
+<p>Background size attribute set to cover</p>
+<div    scroll-frames="matrix5"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-background-size="cover">
+</div>
+
+<p>Background repeat attribute set to repeat</p>
+<div    scroll-frames="matrix2"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-background-repeat="repeat">
+</div>
+
+<p>Background position attribute set to 0%</p>
+<div    scroll-frames="matrix3"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-background-position="0%">
+</div>
+
+<p>Background position attribute set to 100%</p>
+<div    scroll-frames="matrix4"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-background-position="100%">
+</div>
+
+
+<style>
+    [scroll-frames*="matrix"] { 
+        height: 80vh;
+        margin-bottom: 40vh;
+        background-color: #F5F5F5;
+    }
+    p {
+        font-family: monospace;
+        font-size: 16px;
+        padding: 1em;
+        margin: 0;
+    } 
+</style>
+```
+{:.playground title="Fit and adjust"}
