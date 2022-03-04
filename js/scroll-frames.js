@@ -55,11 +55,11 @@ const scrollFrames = {
                 const anim_url_mask = el_anim.dataset.urlMask;
                 // Get the JSON URL
                 const anim_json_url = el_anim.dataset.json;
-                // Get the anim timeline
-                let anim_timeline = el_anim.dataset.timeline;
-                // Set default timeline if unset
-                if (anim_timeline === undefined) {
-                    anim_timeline = '0:0 to 100:100';
+                // Get the anim keyframes
+                let anim_keyframes = el_anim.dataset.keyframes;
+                // Set default keyframes if unset
+                if (anim_keyframes === undefined) {
+                    anim_keyframes = '0:0 to 100:100';
                 }
                 
                 // Check id validity
@@ -86,7 +86,7 @@ const scrollFrames = {
                                 });
                             }
                             // console.log(json_from_mask)
-                            scrollFrames.build(json_from_mask, el_anim, anim_id, anim_timeline);
+                            scrollFrames.build(json_from_mask, el_anim, anim_id, anim_keyframes);
                         }
                     }
                     // Test if valid JSON URL
@@ -97,7 +97,7 @@ const scrollFrames = {
                                 const contentType = response.headers.get("content-type");
                                 if(contentType && contentType.indexOf("application/json") !== -1) {
                                     return response.json().then(function(json) {
-                                        scrollFrames.build(json, el_anim, anim_id, anim_timeline);
+                                        scrollFrames.build(json, el_anim, anim_id, anim_keyframes);
                                     });
                                 } else {
                                     console.log(anim_json_url+" is not a valid JSON URL!");
@@ -109,7 +109,7 @@ const scrollFrames = {
             });
         }
     },
-    build: function(json, el_anim, anim_id, anim_timeline) {
+    build: function(json, el_anim, anim_id, anim_keyframes) {
         // Background image string and background size object
         let backgroundImage = '';
         let backgroundSizes = [];
@@ -141,15 +141,15 @@ const scrollFrames = {
         scrollFrames['anims'][anim_id]['backgroundImage'] = backgroundImage;
         // Write the CSS multiple background-size property for this anim
         scrollFrames['anims'][anim_id]['backgroundSizes'] = backgroundSizes;
-        // Build the transfer function from timeline
+        // Build the transfer function from keyframes
         scrollFrames['anims'][anim_id]['transfer'] = function(scroll_line) {
             let response = 0;
             if (typeof scroll_line == 'number') {
                 // Keypoints
-                if (anim_timeline.indexOf(':') > 0) {
+                if (anim_keyframes.indexOf(':') > 0) {
                     // example: 0:0 to 70:0 to 100:100
                     // console.log(anim_id);
-                    const fromToArray = anim_timeline.split(' to ');
+                    const fromToArray = anim_keyframes.split(' to ');
                     let xa = 0;
                     let ya = fromToArray[0].split(':')[1];
                     let xb = 1;
