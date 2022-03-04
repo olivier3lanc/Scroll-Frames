@@ -15,6 +15,10 @@ Scroll Frames can be applied on any HTML element onto which the following CSS pr
 
 ## Basic usage
 
+* `scroll-frames` attribute
+* `data-url-mask` attribute
+* `data-json` attribute
+
 Two attributes are mandatory to make Scroll Frames work.
 
 * `scroll-frames="YOUR_OWN_UNIQUE_ID"` Each instance of Scroll Frames is set with `scroll-frames` attribute containing a unique value that defines the ID of the instance.
@@ -91,7 +95,7 @@ or
 
 ## JSON
 
-`data-json`
+`data-json` attribute
 
 If URL mask is not possible, Scroll Frames supports JSON format. JSON URL can be either relative to current page or absolute.
 
@@ -132,6 +136,8 @@ JSON file must be set as follows, each still frame URL can be either absolute or
 
 ## Detector
 
+`data-detector` attribute
+
 By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll line value - or its position into the viewport. If `data-detector="ID_OF_ANOTHER_ELEMENT"` is set, Scroll Frames uses the scroll line value of the specified HTML element.
 
 ```html
@@ -159,15 +165,18 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll l
 ```
 {:.playground title="Detector"}
 
-## Timeline and keyframes
+## Keyframes
+
+`data-keyframes` attribute
 
 By default, playback head throughout image sequence is linear during scroll but it is possible to customize it with keyframes. No limitation on amount of keyframes.
 
 ```html
 <p>Still frames start changing when element gets 40% (scroll line 0.4) in the viewport and stop when element gets 60% (scroll line 0.6) in the viewport.</p>
+<p>Scroll down to see.</p>
 <div    scroll-frames="matrix"
         data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
-        data-timeline="0:0 to 40:0 to 60:100 to 100:100">
+        data-keyframes="0:0 to 40:0 to 60:100 to 100:100">
 </div>
 <style>
     [scroll-frames="matrix"] { 
@@ -184,9 +193,9 @@ By default, playback head throughout image sequence is linear during scroll but 
     } 
 </style>
 ```
-{:.playground title="Timeline and keyframes"}
+{:.playground title="Keyframes"}
 
-Timeline and keyframes syntax description:
+Keyframes syntax description:
 
 | Syntax | Description |
 |- |- |
@@ -199,9 +208,9 @@ Example
 
 ```html
 <!-- Description -->
-<div data-timeline="[number1]:[number2] to [number3]:[number4] to [number5]:[number6] to [number7]:[number8] (...)"></div>
+<div data-keyframes="[number1]:[number2] to [number3]:[number4] to [number5]:[number6] to [number7]:[number8] (...)"></div>
 <!-- Example -->
-<div data-timeline="0:0 to 40:0 to 60:100 to 100:100"></div>
+<div data-keyframes="0:0 to 40:0 to 60:100 to 100:100"></div>
 "0:0" when element is entering viewport, playback head is set at 0%
 " to " links two keypoints
 "40:0" when scroll line of the element is 0.4 (40%), playback head is still set at 0%
@@ -214,6 +223,10 @@ Example
 
 
 ## Fit and adjust
+
+* `data-background-position` attribute
+* `data-background-repeat` attribute
+* `data-background-size` attribute
 
 This setting adjusts position of still frames into the element. Scroll Frames changes still frames as CSS background-image. You can customize applicable CSS properties by using the following dedidated data attributes:
 

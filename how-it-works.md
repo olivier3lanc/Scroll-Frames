@@ -4,12 +4,14 @@ description: How Scroll Frames works
 layout: libdoc/page
 ---
 
-## The _scroll line_
+**Scroll line** is an abstract measurement name to appoint the position of each Scroll Frames element into the viewport. **For each Scroll Frame element**, a scroll line is computed.
+## The scroll line
 
-**Scroll line** is an abstract name to appoint the position of each Scroll Frames element into the viewport.
-
-* `0` means the first frame
-* `1` means the last frame
+| Scroll line value | Description |
+|- |- |
+| `0` | Means the first frame is displayed, the element is not into the viewport yet. |
+| `0.5` | Means the playback head displays the middle of the image sequence, the element is in the middle of its scroll into the viewport. |
+| `1` | Means the last frame is displayed, the element is out of the viewport. |
 
 Scroll Frames uses CSS to applies still frames as background image.
 
@@ -52,4 +54,4 @@ Scroll Frames uses CSS to applies still frames as background image.
     }
 </style>
 ```
-{:.playground title="Demo"}
+{:.playground title="Illustration of scroll line"}
