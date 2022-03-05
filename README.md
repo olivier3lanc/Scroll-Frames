@@ -3,15 +3,7 @@ layout: libdoc/page-split
 permalink: index.html
 unlisted: true
 ---
-Scroll Frames bonds scroll on still images sequences to craft cinematics on a web page.
-
-Scroll Frames allows to animate still images sequences binded on scroll.
-
-Scroll Frames is intended to be used for cinematic usage on any web page.
-
-Scroll Frames is a javascript library that applies background image from a sequence of images on any HTML tag according to the position of this HTML tag.
-
-
+Scroll Frames is a javascript library intended to be used for cinematic usage on any web page. Scroll Frames binds scroll on still images sequences to craft cinematics on a web page. It applies CSS background image on any HTML tag from a sequence of images according to the position of this HTML tag.
 
 ## How does it work?
 
@@ -23,7 +15,7 @@ Scroll Frame applies specified frame as background image from a frames sequence 
             data-url-mask="https://olivier3lanc.github.io/cinematics-resources/mad_max_fury_road_opening_scene_a/mad_max_fury_road_opening_scene_a_|1 to 63|.webp"
             data-detector="detector"
             data-background-size="cover">
-        <p>>_ Scroll down and up</p>
+        <p>Scroll down and up</p>
     </div>
     <div id="detector"></div>
 </section>
@@ -46,7 +38,7 @@ Scroll Frame applies specified frame as background image from a frames sequence 
         padding: 1em;
         color: white;
         font-family: monospace;
-        font-size: 24px;
+        font-size: 20px;
     }
 </style>
 ```
