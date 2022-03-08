@@ -1,17 +1,36 @@
+---
+layout: libdoc/page-split
+unlisted: true
+---
+
 Scroll Frames is a javascript library intended to be used for cinematic usage on any web page. Scroll Frames binds scroll on still images sequences to craft cinematics on a web page. It applies CSS background image on any HTML tag from a sequence of images according to the position of this HTML tag.
+
+## Support
+
+
+| Browser | Mobile | Desktop |
+| :- | :-: | :-: |
+| Chrome | ✅ | ✅ |
+| Safari | ✅ | ✅ |
+| Firefox | ✅ ¹ | ✅ ¹ |
+| Opera | ✅ | ✅ |
+| Chromium based browsers (Vivaldi, Brave, ...) | ✅ | ✅ |
+
+<sup>(1) Firefox issue: Some troubles when user leaves the tab and comes back.</sup>
 
 ## Installation
 
-Download include javascript file [scroll-frames.js](js/scroll-frames.js){: download="" title="Download Scroll Frames"} just before the end body tag `</body>`. 
+Download include javascript file [scroll-frames.js]({{'js/scroll-frames.js'|absolute_url}}){: download="" title="Download Scroll Frames"} just before the end body tag `</body>`. 
 
 ```html
 <!-- Required -->
 <script src="path/to/scroll-frames.js"></script>
 ```
+Once install is fine [see usage](usage.html).
 
-## How does it work?
+## Featured example
 
-Scroll Frame applies specified frame as background image from a frames sequence in relation with the position of the window scroll.
+&copy; [Mad Max Fury Road credits](https://www.warnerbros.com/movies/mad-max-fury-road)
 
 ```html
 <section>
@@ -46,4 +65,4 @@ Scroll Frame applies specified frame as background image from a frames sequence 
     }
 </style>
 ```
-{:.playground title="Demo"}
+{:.playground title="Fury Road Demo"}

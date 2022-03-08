@@ -282,3 +282,7 @@ This setting adjusts position of still frames into the element. Scroll Frames ch
 </style>
 ```
 {:.playground title="Fit and adjust"}
+
+## Credits
+
+&copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)

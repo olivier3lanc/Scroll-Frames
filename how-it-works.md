@@ -1,10 +1,10 @@
 ---
 title: How it works
-description: How Scroll Frames works
+description: Scroll Frames is based on scroll line
 layout: libdoc/page
 ---
 
-**Scroll line** is an abstract measurement name to appoint the position of each Scroll Frames element into the viewport. **For each Scroll Frame element**, a scroll line is computed.
+**Scroll line** is an abstract measurement name to appoint the position of each Scroll Frames element into the viewport. **For each Scroll Frame element**, a scroll line is computed on scroll event.
 ## The scroll line
 
 | Scroll line value | Description |
@@ -13,7 +13,7 @@ layout: libdoc/page
 | `0.5` | Means the playback head displays the middle of the image sequence, the element is in the middle of its scroll into the viewport. |
 | `1` | Means the last frame is displayed, the element is out of the viewport. |
 
-Scroll Frames uses CSS to applies still frames as background image.
+Scroll Frames uses CSS to applies still frames as background image on each element you set.
 
 ```html
 <div    scroll-frames="demo_matrix_1"
@@ -24,6 +24,7 @@ Scroll Frames uses CSS to applies still frames as background image.
         <strong class="demo_display-scroll-line">-</strong>
     </p>
 </div>
+<!-- CSS FOR DEMO PURPOSE ONLY -->
 <style>
     [scroll-frames*="matrix"] { 
         margin-top: 100vh;
@@ -54,4 +55,6 @@ Scroll Frames uses CSS to applies still frames as background image.
     }
 </style>
 ```
-{:.playground title="Illustration of scroll line"}
+{:.playground title="Scroll to watch how scroll line works"}
+
+&copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
