@@ -6,7 +6,7 @@ const scrollFrames = {
             backgroundPosition: 'center'
         }
     },
-    // Scroll line
+    // Intersection
     // @el - object - The DOM object to detect
     // Returns float between 0 and 1
     // value == 0 means the element is not visible yet
@@ -14,7 +14,7 @@ const scrollFrames = {
     // 0 means the element starts into the viewport
     // 1 means the element has just finished to run through the viewport
     // value == 1 means the element has past the viewport is not visible anymore
-    getScrollLine: function(el) {
+    getIntersection: function(el) {
         let response = -1;
         if (typeof el == 'object') {
             const detector_id = el.dataset.detector;
@@ -222,9 +222,9 @@ const scrollFrames = {
             if (scrollFrames['anims'][anim_id]['ready'] && scrollFrames['anims'][anim_id]['el'] !== null) {
                 let current_scroll_line = 0;
                 if (scrollFrames['anims'][anim_id]['el_detector'] !== null && scrollFrames['anims'][anim_id]['el_detector'] !== undefined) {
-                    current_scroll_line = scrollFrames.getScrollLine(scrollFrames['anims'][anim_id]['el_detector']);
+                    current_scroll_line = scrollFrames.getIntersection(scrollFrames['anims'][anim_id]['el_detector']);
                 } else {
-                    current_scroll_line = scrollFrames.getScrollLine(scrollFrames['anims'][anim_id]['el']);
+                    current_scroll_line = scrollFrames.getIntersection(scrollFrames['anims'][anim_id]['el']);
                 }
                 const frameIndex = scrollFrames['anims'][anim_id]['transfer'](current_scroll_line);
                 const index = Math.round(frameIndex * (scrollFrames['anims'][anim_id]['backgroundSizes'].length - 1));

@@ -18,19 +18,7 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 <sup>(1) Firefox issue: Some troubles when user leaves the tab and comes back.</sup>
 
-## Installation
-
-Download include javascript file [scroll-frames.js]({{'js/scroll-frames.js'|absolute_url}}){: download="" title="Download Scroll Frames"} just before the end body tag `</body>`. 
-
-```html
-<!-- Required -->
-<script src="path/to/scroll-frames.js"></script>
-```
-Once install is fine [see usage](usage.html).
-
-## Featured example
-
-&copy; [Mad Max Fury Road credits](https://www.warnerbros.com/movies/mad-max-fury-road)
+Featured example &copy; [Mad Max Fury Road credits](https://www.warnerbros.com/movies/mad-max-fury-road)
 
 ```html
 <section>

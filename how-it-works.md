@@ -1,13 +1,15 @@
 ---
 title: How it works
-description: Scroll Frames is based on scroll line
+description: Scroll Frames is based on intersection
 layout: libdoc/page
+category: Getting started
+order: 14
 ---
 
-**Scroll line** is an abstract measurement name to appoint the position of each Scroll Frames element into the viewport. **For each Scroll Frame element**, a scroll line is computed on scroll event.
-## The scroll line
+**Intersection** is an abstract measurement name to appoint the position of each Scroll Frames element into the viewport. **For each Scroll Frame element**, a intersection is computed on scroll event.
+## The intersection
 
-| Scroll line value | Description |
+| Intersection value | Description |
 |- |- |
 | `0` | Means the first frame is displayed, the element is not into the viewport yet. |
 | `0.5` | Means the playback head displays the middle of the image sequence, the element is in the middle of its scroll into the viewport. |
@@ -20,7 +22,7 @@ Scroll Frames uses CSS to applies still frames as background image on each eleme
         data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-background-size="cover">
     <p>
-        <span>Scroll line value</span>
+        <span>Intersection value</span>
         <strong class="demo_display-scroll-line">-</strong>
     </p>
 </div>
@@ -55,6 +57,6 @@ Scroll Frames uses CSS to applies still frames as background image on each eleme
     }
 </style>
 ```
-{:.playground title="Scroll to watch how scroll line works"}
+{:.playground title="Scroll to watch how intersection works"}
 
 &copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)

@@ -2,6 +2,8 @@
 title: Usage
 description: How to use Scroll Frames
 layout: libdoc/page
+category: Getting started
+order: 12
 ---
 * 
 {:toc}
@@ -138,7 +140,7 @@ JSON file must be set as follows, each still frame URL can be either absolute or
 
 `data-detector` attribute
 
-By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll line value - or its position into the viewport. If `data-detector="ID_OF_ANOTHER_ELEMENT"` is set, Scroll Frames uses the scroll line value of the specified HTML element.
+By default, Scroll Frames use the specified element `scroll-frame="ID"` intersection value - or its position into the viewport. If `data-detector="ID_OF_ANOTHER_ELEMENT"` is set, Scroll Frames uses the intersection value of the specified HTML element.
 
 ```html
 <p>Frames change in relation with the position of the `hr` element.</p>
@@ -172,7 +174,7 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` scroll l
 By default, playback head throughout image sequence is linear during scroll but it is possible to customize it with keyframes. No limitation on amount of keyframes.
 
 ```html
-<p>Still frames start changing when element gets 40% (scroll line 0.4) in the viewport and stop when element gets 60% (scroll line 0.6) in the viewport.</p>
+<p>Still frames start changing when element gets 40% (intersection 0.4) in the viewport and stop when element gets 60% (intersection 0.6) in the viewport.</p>
 <p>Scroll down to see.</p>
 <div    scroll-frames="matrix"
         data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
@@ -213,11 +215,11 @@ Example
 <div data-keyframes="0:0 to 40:0 to 60:100 to 100:100"></div>
 "0:0" when element is entering viewport, playback head is set at 0%
 " to " links two keypoints
-"40:0" when scroll line of the element is 0.4 (40%), playback head is still set at 0%
+"40:0" when intersection of the element is 0.4 (40%), playback head is still set at 0%
 " to " links two keypoints
-"60:100" when scroll line of the element is 0.6 (60%), playback head is set at 100%
+"60:100" when intersection of the element is 0.6 (60%), playback head is set at 100%
 " to " links two keypoints
-"100:100" when scroll line of the element is 1 (100%), playback head is set at 100%
+"100:100" when intersection of the element is 1 (100%), playback head is set at 100%
 ```
 
 
