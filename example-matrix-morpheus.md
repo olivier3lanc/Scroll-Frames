@@ -1,6 +1,6 @@
 ---
 title: Matrix - Morpheus
-description: Playhead moves once the element gets into the viewport.
+description: Playhead moves once the detection element gets into the viewport.
 layout: libdoc/page-split
 category: Examples
 order: 100
@@ -31,4 +31,4 @@ order: 100
 ```
 {:.playground .playground-pin title="Scroll down to view"}
 
-&copy; [Harry Potter](https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection)
+&copy; [The Matrix](https://www.warnerbros.com/movies/matrix)

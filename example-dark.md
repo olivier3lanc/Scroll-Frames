@@ -1,6 +1,6 @@
 ---
 title: D A R K
-description: Playhead moves once the element gets into the viewport.
+description: Playhead moves once the detection element gets into the viewport.
 layout: libdoc/page-split
 category: Examples
 order: 100
