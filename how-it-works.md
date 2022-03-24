@@ -6,6 +6,8 @@ category: Getting started
 order: 14
 ---
 
+Scroll Frames uses multiple background images with CSS background-image property and multiple background-position.
+
 **Intersection** is an abstract measurement name to appoint the position of each Scroll Frames element into the viewport. **For each Scroll Frame element**, a intersection is computed on scroll event.
 ## The intersection
 

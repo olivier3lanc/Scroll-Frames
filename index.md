@@ -5,8 +5,7 @@ unlisted: true
 
 Scroll Frames is a javascript library intended to be used for cinematic usage on any web page. Scroll Frames binds scroll on still images sequences to craft cinematics on a web page. It applies CSS background image on any HTML tag from a sequence of images according to the position of this HTML tag.
 
-## Support
-
+## Browsers support
 
 | Browser | Mobile | Desktop |
 | :- | :-: | :-: |
