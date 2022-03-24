@@ -3,7 +3,7 @@ title: How it works
 description: Scroll Frames is based on intersection
 layout: libdoc/page
 category: Getting started
-order: 14
+order: 13
 ---
 
 Scroll Frames uses multiple background images with CSS background-image property and multiple background-position.

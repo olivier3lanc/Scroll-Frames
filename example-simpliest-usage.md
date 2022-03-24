@@ -3,7 +3,7 @@ title: The simpliest usage
 description: Playhead moves once the element gets into the viewport.
 layout: libdoc/page-split
 category: Examples
-order: 100
+order: 90
 ---
 
 ```html

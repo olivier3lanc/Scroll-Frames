@@ -1,35 +1,15 @@
 ---
 title: Performances
-description: Facts about performance issues using Scroll Frames
+description: Things to be aware of using Scroll Frames
 layout: libdoc/page
 category: Getting started
-order: 12
+order: 18
 ---
 
-Even if Scroll Frames is able to have multiple instance on a single page, user must be aware of the following notes:
+Scroll Frames applies still images on DOM elements, so bandwidth and performances are affected in relation with:
 
-* Vector images frames is supported
-* For raster image format, it is highly recommended to use [WebP image format](https://en.wikipedia.org/wiki/WebP)
-* Page performances depend on frames sizes and compression.
-* Higher amounts of frames - over 200 - decreases performance, the more on low-end devices
-* Consider not exceeding an image sequence over 2MB for a single animation
-
-| Raster file | Size | Support (% of users)<sup>1</sup> |
-|:- |:- |:- |
-| PNG (Source image w/ lossless compression) | 1 331 kB | 99.99% |
-| JPEG (approx. w/ quality set to 30) | 29.6 kB| 99.99% |
-| WebP (approx. w/ quality set to 30) | 21.6 kB| 95% |
-| AVIF (approx. w/ quality set to 30) | 14.6 kB| 69% |
-
-<sup>(1) Source https://caniuse.com march 2022</sup>
-
-Illustrations below shows renders in different image formats from [https://squoosh.app](https://squoosh.app)
-
-JPEG | Widely supported
-![JPEG](img/squoosh-jpg.webp)
-
-WebP | Recommened format, good support [learn more](https://caniuse.com/webp)
-![WebP](img/squoosh-webp.webp)
-
-AVIF | The most powerful image compression but low brower support [learn more](https://caniuse.com/avif)
-![AVIF](img/squoosh-avif.webp)
+* **Image resolution**: Higher still frames resolutions (higher width and higher height) uses more bandwidth and device resources. Consider resizing properly your images sequences to your needs.
+* **Image compression**: Low/lossless compression of still frames uses more bandwidth. Consider compressing properly your images sequences in modern format like WebP to save bandwidth.
+* **Image format**: PNG, low compression JPEG files allow get high quality rendering but use a large amount of bandwidth, it is strongly recommended to use WebP format or highly compressed JPEG.
+* **Amount of images**: The more Scroll Frames instances have still frames, the more bandwidth and device resources are required.
+* **Amount of instances**: The more you set Scroll Frames instances on a page, the more bandwidth and device resources are required.

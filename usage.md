@@ -8,7 +8,7 @@ order: 12
 * 
 {:toc}
 
-Scroll Frames can be applied on any HTML element onto which the following CSS properties can be applied: 
+Scroll Frames can be applied on any HTML element, the script uses the following CSS properties: 
 
 * _background-image_
 * _background-position_

@@ -6,9 +6,12 @@ category: Examples
 order: 110
 ---
 
+Example with a 3D phone mockup using [keyframes feature](usage.html#keyframes).
+
 ```html
 <div    scroll-frames="mockup"
-        data-url-mask="../img/phone/frame-|1 to 44|.webp">
+        data-url-mask="../img/phone/frame-|1 to 44|.webp"
+        data-keyframes="0:0 to 30:0 to 70:100 to 100:100">
 </div>
 <!-- CSS FOR DEMO PURPOSE ONLY -->
 <style>
@@ -20,4 +23,4 @@ order: 110
     }
 </style>
 ```
-{:.playground .playground-pin title="Scroll down to view"}
+{:.playground .playground-pin title="3D phone mockup"}

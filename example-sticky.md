@@ -3,7 +3,7 @@ title: Sticky method
 description: Place the scene always on top using detector.
 layout: libdoc/page-split
 category: Examples
-order: 120
+order: 92
 ---
 
 ```html

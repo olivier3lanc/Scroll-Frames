@@ -3,7 +3,7 @@ title: Play once fully visible
 description: The scene plays once fully into the viewport using detector.
 layout: libdoc/page-split
 category: Examples
-order: 120
+order: 94
 ---
 
 ```html
@@ -16,12 +16,12 @@ order: 120
     <hr id="the_detector">
 </section>
 <section>
-    <div    scroll-frames="demo_dark"
-            data-url-mask="https://olivier3lanc.github.io/folio-dark/img/grottes-a/grottes-a-|1 to 98|.webp"
+    <div    scroll-frames="demo_matrix_2"
+            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_morpheus_smith_a/matrix_morpheus_smith_a_|1 to 103|.webp"
             data-background-size="cover"
-            data-detector="the_detector_dark">
+            data-detector="the_detector_2">
     </div>
-    <hr id="the_detector_dark">
+    <hr id="the_detector_2">
 </section>
 
 <!-- CSS FOR DEMO PURPOSE ONLY -->

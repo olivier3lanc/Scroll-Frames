@@ -5,6 +5,12 @@ unlisted: true
 
 Scroll Frames is a javascript library intended to be used for cinematic usage on any web page. Scroll Frames binds scroll on still images sequences to craft cinematics on a web page. It applies CSS background image on any HTML tag from a sequence of images according to the position of this HTML tag.
 
+## Key Features
+
+* **Native Javascript**
+* **No dependencies**
+* **Easy to use** see [usage](usage.html)
+
 ## Browsers support
 
 | Browser | Mobile | Desktop |
@@ -17,12 +23,12 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 <sup>(1) Firefox issue: Some troubles when user leaves the tab and comes back.</sup>
 
-Featured example &copy; [Mad Max Fury Road credits](https://www.warnerbros.com/movies/mad-max-fury-road)
+Featured example &copy; [The Matrix credits](https://www.warnerbros.com/movies/matrix)
 
 ```html
 <section>
-    <div    scroll-frames="matrix1"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/mad_max_fury_road_opening_scene_a/mad_max_fury_road_opening_scene_a_|1 to 63|.webp"
+    <div    scroll-frames="demo"
+            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
             data-detector="detector"
             data-background-size="cover">
         <p>Scroll down and up</p>
@@ -33,12 +39,12 @@ Featured example &copy; [Mad Max Fury Road credits](https://www.warnerbros.com/m
     section {
         height: 200vh;
     }
-    [scroll-frames="matrix1"] {
+    [scroll-frames="demo"] {
         height: 100vh;
         position: sticky;
         top: 0;
     }
-    [scroll-frames="matrix1"] > p {
+    [scroll-frames="demo"] > p {
         box-sizing: border-box;
         position: absolute;
         left: 0;
@@ -52,4 +58,4 @@ Featured example &copy; [Mad Max Fury Road credits](https://www.warnerbros.com/m
     }
 </style>
 ```
-{:.playground title="Fury Road Demo"}
+{:.playground title="The Matrix bullet time"}
