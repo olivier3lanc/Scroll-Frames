@@ -1,8 +1,28 @@
 # Scroll Frames
 
+[Documentation and examples](https://olivier3lanc.github.io/Scroll-Frames/)
+
 Animate sequences of still frames on any DOM element in relation with its position into the viewport.
 
 Scroll Frames is a javascript library intended to be used for cinematic usage on any web page. Scroll Frames binds scroll on still images sequences to craft cinematics on a web page. It applies CSS background image on any HTML tag from a sequence of images according to the position of this HTML tag.
+
+## Showcase
+
+[![La Casa de Papel](https://github.com/olivier3lanc/folio-casa-de-papel/raw/master/img/html5_la_casa_de_papel.webp)](https://olivier3lanc.github.io/folio-casa-de-papel/)
+
+[![D A R K](https://github.com/olivier3lanc/folio-dark/raw/master/img/dark-cinematics.webp)](https://olivier3lanc.github.io/folio-dark/)
+
+## Examples
+
+* [The simpliest usage](https://olivier3lanc.github.io/Scroll-Frames/example-simpliest-usage.html)
+* [Sticky method](https://olivier3lanc.github.io/Scroll-Frames/example-sticky.html)
+* [Play once fully visible](https://olivier3lanc.github.io/Scroll-Frames/example-play-once-fully-visible.html)
+* [D A R K](https://olivier3lanc.github.io/Scroll-Frames/example-dark.html)
+* [Harry Potter Wand](https://olivier3lanc.github.io/Scroll-Frames/example-harry-potter.html)
+* [Matrix - Morpheus](https://olivier3lanc.github.io/Scroll-Frames/example-matrix-morpheus.html)
+* [Mockup](https://olivier3lanc.github.io/Scroll-Frames/example-mockup.html)
+* [Other examples](https://olivier3lanc.github.io/Scroll-Frames/other-examples.html)
+
 ## Key Features
 
 * **Native Javascript**
@@ -23,6 +43,8 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 ## Installation
 
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/installation.html)
+
 Include Javascript file `scroll-frames.js` just before the end body tag `</body>`.
 
 ```html
@@ -32,6 +54,8 @@ Include Javascript file `scroll-frames.js` just before the end body tag `</body>
 
 ## Usage
 
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html)
+
 Scroll Frames can be applied on any HTML element, the script uses the following CSS properties: 
 
 * _background-image_
@@ -40,6 +64,8 @@ Scroll Frames can be applied on any HTML element, the script uses the following 
 * _background-repeat_
 
 ### Basic usage
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#basic-usage)
 
 * `scroll-frames` attribute
 * `data-url-mask` attribute
@@ -63,6 +89,8 @@ EXAMPLE WITH JSON URL
 
 
 ### URL mask
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#url-mask)
 
 `data-url-mask` attribute
 
@@ -120,6 +148,8 @@ or
 
 ### JSON
 
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#json)
+
 `data-json` attribute
 
 If URL mask is not possible, Scroll Frames supports JSON format. JSON URL can be either relative to current page or absolute.
@@ -144,7 +174,6 @@ If URL mask is not possible, Scroll Frames supports JSON format. JSON URL can be
     } 
 </style>
 ```
-{:.playground title="JSON file"}
 
 JSON file must be set as follows, each still frame URL can be either absolute or relative.
 
@@ -160,6 +189,8 @@ JSON file must be set as follows, each still frame URL can be either absolute or
 ```
 
 ### Detector
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#detector)
 
 `data-detector` attribute
 
@@ -190,6 +221,8 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` intersec
 ```
 
 ### Keyframes
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#keyframes)
 
 `data-keyframes` attribute
 
@@ -244,6 +277,8 @@ Example
 ```
 
 ### Fit and adjust
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#fit-and-adjust)
 
 * `data-background-position` attribute
 * `data-background-repeat` attribute
@@ -300,7 +335,68 @@ This setting adjusts position of still frames into the element. Scroll Frames ch
     } 
 </style>
 ```
+## Image format support
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/image-format-support.html)
+
+Scroll Frames supports browser supported images formats including modern ones like WebP.
+
+Scroll Frames is based on CSS and Javascript, thus, it supports any image format the browser supports. Even if Scroll Frames is able to have multiple instance on a single page, user must be aware of the following notes:
+
+* Vector images frames are supported
+* For raster image format, it is highly recommended to use [WebP image format](https://en.wikipedia.org/wiki/WebP)
+* Page performances depend on frames sizes and compression.
+* Higher amounts of frames - over 200 - decreases performance, the more on low-end devices
+* Consider not exceeding an image sequence over 2MB for a single animation
+
+| Raster file | Size | Support (% of users)<sup>1</sup> |
+|:- |:- |:- |
+| **PNG** (Source image w/ lossless compression) | 1 331 kB | 99.99% |
+| **JPEG** (approx. w/ quality set to 30) | 29.6 kB| 99.99% |
+| **WebP** (approx. w/ quality set to 30) | 21.6 kB| 95% |
+| **AVIF** (approx. w/ quality set to 30) | 14.6 kB| 69% |
+
+<sup>(1) Source https://caniuse.com march 2022</sup>
+
+Illustrations below shows renders in different image formats from [https://squoosh.app](https://squoosh.app)
+
+JPEG | Widely supported
+![JPEG](https://github.com/olivier3lanc/Scroll-Frames/raw/master/img/squoosh-jpg.webp)
+
+WebP | Recommened format, good support [learn more](https://caniuse.com/webp)
+![WebP](https://github.com/olivier3lanc/Scroll-Frames/raw/master/img/squoosh-webp.webp)
+
+AVIF | The most powerful image compression but low brower support [learn more](https://caniuse.com/avif)
+![AVIF](https://github.com/olivier3lanc/Scroll-Frames/raw/master/img/squoosh-avif.webp)
+
+## Performances
+
+[Documentation](https://olivier3lanc.github.io/Scroll-Frames/performances.html)
+
+Scroll Frames applies still images on DOM elements, so bandwidth and performances are affected in relation with:
+
+* **Image resolution**: Higher still frames resolutions (higher width and higher height) uses more bandwidth and device resources. Consider resizing properly your images sequences to your needs.
+* **Image compression**: Low/lossless compression of still frames uses more bandwidth. Consider compressing properly your images sequences in modern format like WebP to save bandwidth.
+* **Image format**: PNG, low compression JPEG files allow get high quality rendering but use a large amount of bandwidth, it is strongly recommended to use WebP format or highly compressed JPEG.
+* **Amount of images**: The more Scroll Frames instances have still frames, the more bandwidth and device resources are required.
+* **Amount of instances**: The more you set Scroll Frames instances on a page, the more bandwidth and device resources are required.
 
 ## Credits
 
-&copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
+* &copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
+* &copy; [Copyright D A R K](https://www.netflix.com/fr/title/80100172) 
+* &copy; [Copyright Mad Max Fury Road](https://www.warnerbros.com/movies/mad-max-fury-road) 
+* &copy; [Copyright La Casa de Papel](https://www.antena3.com/series/casa-de-papel/) 
+* &copy; [Copyright Harry Potter](https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection) 
+* &copy; [Copyright Jaws](https://www.imdb.com/title/tt0073195/) 
+## License
+
+MIT License 
+
+Copyright 2022 [Olivier 3lanc](https://github.com/olivier3lanc)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
