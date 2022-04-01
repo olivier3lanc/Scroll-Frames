@@ -383,7 +383,8 @@ Scroll Frames applies still images on DOM elements, so bandwidth and performance
 
 ## Credits
 
-* &copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
+* &copy; [Copyright Breaking Bad](https://www.netflix.com/fr/title/70143836) 
+* &copy; [Copyright The Matrix](https://www.warnerbros.com/movies/matrix)
 * &copy; [Copyright D A R K](https://www.netflix.com/fr/title/80100172) 
 * &copy; [Copyright Mad Max Fury Road](https://www.warnerbros.com/movies/mad-max-fury-road) 
 * &copy; [Copyright La Casa de Papel](https://www.antena3.com/series/casa-de-papel/) 
