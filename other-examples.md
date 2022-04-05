@@ -30,9 +30,6 @@ blockhaus_a | 79 frames
 blockhaus_b | 99 frames
 [![blockhaus_b](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/blockhaus_b/blockhaus_b_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=blockhaus_b&amount=99)
 
-centrale_a | 145 frames
-[![centrale_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/centrale_a/centrale_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=centrale_a&amount=145)
-
 claudia_futur_a | 60 frames
 [![claudia_futur_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/claudia_futur_a/claudia_futur_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=claudia_futur_a&amount=60)
 
@@ -51,26 +48,14 @@ foret_noa | 129 frames
 grottes_a | 98 frames
 [![grottes_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/grottes_a/grottes_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=grottes_a&amount=98)
 
-grottes_b | 43 frames
-[![grottes_b](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/grottes_b/grottes_b_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=grottes_b&amount=43)
-
 grottes_c | 129 frames
 [![grottes_c](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/grottes_c/grottes_c_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=grottes_c&amount=129)
-
-machine_a | 40 frames
-[![machine_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/machine_a/machine_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=machine_a&amount=40)
 
 machine_b | 75 frames
 [![machine_b](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/machine_b/machine_b_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=machine_b&amount=75)
 
 machine_c | 101 frames
 [![machine_c](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/machine_c/machine_c_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=machine_c&amount=101)
-
-marta | 101 frames
-[![marta](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/marta/marta_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=marta&amount=101)
-
-newspaper_mikkel | 74 frames
-[![newspaper_mikkel](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/newspaper_mikkel/newspaper_mikkel_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=newspaper_mikkel&amount=74)
 
 opening_credits_a | 27 frames
 [![opening_credits_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_a/opening_credits_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_a&amount=27)
@@ -102,9 +87,6 @@ opening_credits_i | 64 frames
 opening_credits_j | 66 frames
 [![opening_credits_j](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_j/opening_credits_j_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_j&amount=66)
 
-opening_credits_k | 194 frames
-[![opening_credits_k](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_k/opening_credits_k_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_k&amount=194)
-
 opening_credits_l | 64 frames
 [![opening_credits_l](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_l/opening_credits_l_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_l&amount=64)
 
@@ -116,9 +98,6 @@ opening_credits_n | 154 frames
 
 opening_credits_o | 68 frames
 [![opening_credits_o](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_o/opening_credits_o_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_o&amount=68)
-
-opening_credits_p | 66 frames
-[![opening_credits_p](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_p/opening_credits_p_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_p&amount=66)
 
 opening_credits_q | 65 frames
 [![opening_credits_q](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/opening_credits_q/opening_credits_q_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=opening_credits_q&amount=65)
@@ -165,23 +144,11 @@ route_b | 68 frames
 route_c | 79 frames
 [![route_c](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/route_c/route_c_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=route_c&amount=79)
 
-sablier | 92 frames
-[![sablier](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/sablier/sablier_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=sablier&amount=92)
-
-sic_mundus_tattoo | 44 frames
-[![sic_mundus_tattoo](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/sic_mundus_tattoo/sic_mundus_tattoo_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=sic_mundus_tattoo&amount=44)
-
-st_christophe_a | 90 frames
-[![st_christophe_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/st_christophe_a/st_christophe_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=st_christophe_a&amount=90)
-
 st_christophe_b | 133 frames
 [![st_christophe_b](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/st_christophe_b/st_christophe_b_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=st_christophe_b&amount=133)
 
 st_christophe_c | 69 frames
 [![st_christophe_c](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/st_christophe_c/st_christophe_c_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=st_christophe_c&amount=69)
-
-tannhaus_book | 56 frames
-[![tannhaus_book](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/tannhaus_book/tannhaus_book_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=tannhaus_book&amount=56)
 
 tannhaus_machine_a | 210 frames
 [![tannhaus_machine_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/tannhaus_machine_a/tannhaus_machine_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=tannhaus_machine_a&amount=210)
@@ -308,17 +275,11 @@ casa_tokyo_4 | 81 frames
 ## The Matrix
 [Copyright The Matrix](https://www.warnerbros.com/movies/matrix) 
 
-matrix_blue_pill | 79 frames
-[![matrix_blue_pill](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/matrix_blue_pill/matrix_blue_pill_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=matrix_blue_pill&amount=79)
-
 matrix_bullet_time_a | 60 frames
 [![matrix_bullet_time_a](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_a/matrix_bullet_time_a_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=matrix_bullet_time_a&amount=60)
 
 matrix_bullet_time_b | 197 frames
 [![matrix_bullet_time_b](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=matrix_bullet_time_b&amount=197)
-
-matrix_bullets_sockets | 14 frames
-[![matrix_bullets_sockets](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/matrix_bullets_sockets/matrix_bullets_sockets_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=matrix_bullets_sockets&amount=14)
 
 matrix_children_magic | 63 frames
 [![matrix_children_magic](https://images.weserv.nl/?url=https://olivier3lanc.github.io/cinematics-resources/matrix_children_magic/matrix_children_magic_1.webp&output=webp&w=1400&q=30)](https://olivier3lanc.github.io/folio-cinematics/scene.html?scene=matrix_children_magic&amount=63)
