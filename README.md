@@ -1,5 +1,7 @@
 # Scroll Frames
 
+![Logo Scroll Frames](img/logo-scroll-frames.svg)
+
 [Documentation and examples](https://olivier3lanc.github.io/Scroll-Frames/)
 
 Animate sequences of still frames on any DOM element in relation with its position into the viewport.
