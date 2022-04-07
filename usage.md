@@ -285,6 +285,13 @@ This setting adjusts position of still frames into the element. Scroll Frames ch
 ```
 {:.playground title="Fit and adjust"}
 
+## Methods
+
+Scroll Frames comes with the following methods.
+
+* `scrollFrames.getIntersection(element)` Returns the intersection value of the specified element.
+* `scrollFrames.update()` Start Scroll Frames or update instances if DOM has changed.
+
 ## Credits
 
 &copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)

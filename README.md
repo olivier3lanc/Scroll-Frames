@@ -337,6 +337,14 @@ This setting adjusts position of still frames into the element. Scroll Frames ch
     } 
 </style>
 ```
+
+## Methods
+
+Scroll Frames comes with the following methods.
+
+* `scrollFrames.getIntersection(element)` Returns the intersection value of the specified element.
+* `scrollFrames.update()` Start Scroll Frames or update instances if DOM has changed.
+
 ## Image format support
 
 [Documentation](https://olivier3lanc.github.io/Scroll-Frames/image-format-support.html)
