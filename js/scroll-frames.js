@@ -113,7 +113,7 @@ const scrollFrames = {
         // Background image string and background size object
         let backgroundImage = '';
         let backgroundSizes = [];
-        console.log(json);
+        // console.log(json);
         json.forEach(function(data, index) {
             backgroundImage += 'url('+data.url+')';
             if (index < json.length - 1) {
@@ -236,89 +236,3 @@ const scrollFrames = {
     }
 }
 scrollFrames.update();
-
-
-
-// POC
-// let el = document.getElementById('test');
-// // With fetch
-// fetch('../js/fakedata/frames.json').then(function(response) {
-//     var contentType = response.headers.get("content-type");
-//     if(contentType && contentType.indexOf("application/json") !== -1) {
-//         return response.json().then(function(json) {
-//             // traitement du JSON
-//             // Background image string and background size object
-//             let backgroundImage = '';
-//             let backgroundSizes = [];
-//             json.frames.forEach(function(url, index) {
-//                 backgroundImage += 'url('+url.url+')';
-//                 if (index < json.frames.length - 1) {
-//                     backgroundImage += ',';
-//                 }
-//                 let backgroundSize = '';
-//                 json.frames.forEach(function(url, bsIndex) {
-//                     if (bsIndex == index) {
-//                         backgroundSize += 'cover';
-//                     } else {
-//                         backgroundSize += '0%';
-//                     }
-//                     if (bsIndex < json.frames.length - 1) {
-//                         backgroundSize += ',';
-//                     }
-//                 });
-//                 backgroundSizes.push(backgroundSize);
-//             });
-//             el.style.backgroundImage = backgroundImage;
-//             // console.log(backgroundSizes);
-
-//             // Scroll
-//             let window_scroll_top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-//             const window_height = window.document.documentElement.clientHeight;
-//             const body = document.body;
-//             const html = document.documentElement;
-//             const document_height = Math.max(
-//                 body.offsetHeight,
-//                 body.scrollHeight,
-//                 html.clientHeight,
-//                 html.offsetHeight,
-//                 html.scrollHeight
-//             );
-//             let index = 0, previousIndex = 0;
-//             let frame = function() {
-//                 window_scroll_top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-//                 //index = window_scroll_top / (document_height - window_height);
-//                 index = Math.round((window_scroll_top / (document_height - window_height)) * (backgroundSizes.length - 1));
-                
-//                 if (previousIndex !== index) {
-//                     // console.log(index);
-//                 }
-//                 previousIndex = index;
-//                 // for (const property in actual_JSON['frames'][index]) {
-//                 //     if (Object.hasOwnProperty.call(actual_JSON['frames'][index], property)) {
-//                 //         el.style[property] = actual_JSON['frames'][index][property];
-//                 //     }
-//                 // }
-//                 // el.style.backgroundImage = 'url('+actual_JSON['frames'][index]+')';
-//                 el.style.backgroundSize = backgroundSizes[index];
-
-//             };
-//             window.addEventListener('scroll', frame);
-//         });
-//     } else {
-//         console.log("Oops, nous n'avons pas du JSON!");
-//     }
-// });
-
-
-// JSON with XHR
-// let xobj = new XMLHttpRequest();
-//     xobj.overrideMimeType("application/json");
-// xobj.open('GET', '../js/fakedata/frames.json', true); // Replace 'my_data' with the path to your file
-// xobj.onreadystatechange = function () {
-//     if (xobj.readyState == 4 && xobj.status == "200") {
-//         // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-        
-//     }
-// };
-// xobj.send(null);
-
