@@ -8,7 +8,7 @@ order: 10
 
 Include Javascript file `scroll-frames.js` just before the end body tag `</body>`.
 
-[Download scroll-frames.js](js/scroll-frames.js){: download="download"}
+[Download scroll-frames.js](js/scroll-frames.js){: download=""}
 
 ```html
 <!-- Required -->
