@@ -47,7 +47,7 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 [Documentation](https://olivier3lanc.github.io/Scroll-Frames/installation.html)
 
-Include Javascript file `scroll-frames.js` just before the end body tag `</body>`.
+Include Javascript file `scroll-frames.js` just before the end body tag `</body>`. [Download scroll-frames.js](https://olivier3lanc.github.io/Scroll-Frames/js/scroll-frames.js)
 
 ```html
 <!-- Required -->
