@@ -31,3 +31,4 @@ order: 92
 ```
 {:.playground .playground-pin title="Scroll down to view"}
 
+&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)

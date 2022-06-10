@@ -44,5 +44,5 @@ order: 94
 ```
 {:.playground .playground-pin title="Scroll down to view"}
 
-### Credits
+&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)
 
