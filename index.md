@@ -23,12 +23,12 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 <sup>(1) Firefox issue: Some troubles when user leaves the tab and comes back.</sup>
 
-Featured example &copy; [The Matrix credits](https://www.warnerbros.com/movies/matrix)
+&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)
 
 ```html
 <section>
     <div    scroll-frames="demo"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_albertville/timelapse_albertville_|1 to 120|.webp"
             data-detector="detector"
             data-background-size="cover">
         <p>Scroll down and up</p>
@@ -58,4 +58,4 @@ Featured example &copy; [The Matrix credits](https://www.warnerbros.com/movies/m
     }
 </style>
 ```
-{:.playground title="The Matrix bullet time"}
+{:.playground title="Timelapse example"}

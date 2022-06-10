@@ -18,8 +18,7 @@ Example with a 3D phone mockup using [keyframes feature](usage.html#keyframes).
     [scroll-frames] { 
         margin-top: 90vh;
         margin-bottom: 90vh;
-        height: 300px;
-        background-color: #F5F5F5;
+        height: 100vh;
     }
 </style>
 ```

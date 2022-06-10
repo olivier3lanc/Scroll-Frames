@@ -7,8 +7,8 @@ order: 90
 ---
 
 ```html
-<div    scroll-frames="demo_matrix_1"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+<div    scroll-frames="any_id"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_albertville/timelapse_albertville_|1 to 120|.webp">
 </div>
 <!-- CSS FOR DEMO PURPOSE ONLY -->
 <style>
@@ -21,5 +21,3 @@ order: 90
 </style>
 ```
 {:.playground .playground-pin title="Scroll down to view"}
-
-&copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)

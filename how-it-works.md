@@ -20,8 +20,8 @@ Scroll Frames uses multiple background images with CSS background-image property
 Scroll Frames uses CSS to applies still frames as background image on each element you set.
 
 ```html
-<div    scroll-frames="demo_matrix_1"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="timelapse_1"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_albertville/timelapse_albertville_|1 to 120|.webp"
         data-background-size="cover">
     <p>
         <span>Intersection value</span>
@@ -30,7 +30,7 @@ Scroll Frames uses CSS to applies still frames as background image on each eleme
 </div>
 <!-- CSS FOR DEMO PURPOSE ONLY -->
 <style>
-    [scroll-frames*="matrix"] { 
+    [scroll-frames*="timelapse"] { 
         margin-top: 100vh;
         margin-bottom: 110vh;
         height: 90vh;
@@ -61,4 +61,4 @@ Scroll Frames uses CSS to applies still frames as background image on each eleme
 ```
 {:.playground title="Scroll to watch how intersection works"}
 
-&copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
+&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)

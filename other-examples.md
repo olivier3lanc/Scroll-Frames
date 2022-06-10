@@ -1,5 +1,5 @@
 ---
-title: Other examples
+title: Other Cinematics
 description: Cinematic examples made with Scroll Frames
 layout: libdoc/page
 category: Examples
@@ -7,6 +7,8 @@ order: 130
 ---
 * 
 {:toc}
+
+The following still frames sequences were extracted from original movies Blu-Ray discs and highly compressed *for demo purpose only*.
 
 ## Black Mirror
 

@@ -8,16 +8,16 @@ order: 94
 
 ```html
 <section>
-    <div    scroll-frames="demo_matrix_1"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+    <div    scroll-frames="timelapse_1"
+            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_albertville/timelapse_albertville_|1 to 120|.webp"
             data-background-size="cover"
             data-detector="the_detector">
     </div>
     <hr id="the_detector">
 </section>
 <section>
-    <div    scroll-frames="demo_matrix_2"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_morpheus_smith_a/matrix_morpheus_smith_a_|1 to 103|.webp"
+    <div    scroll-frames="timelapse_2"
+            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_roselend/timelapse_roselend_|1 to 120|.webp"
             data-background-size="cover"
             data-detector="the_detector_2">
     </div>
@@ -46,5 +46,3 @@ order: 94
 
 ### Credits
 
-* &copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
-* &copy; [D A R K](https://www.netflix.com/fr/title/80100172)

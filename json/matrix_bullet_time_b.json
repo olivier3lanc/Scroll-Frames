@@ -1,7 +1,7 @@
 ---
 ---
 [
-{% for i in (1..197) %}
-    { "url": "https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_{{i}}.webp"}{% if forloop.last == false %},{% endif %}
+{% for i in (1..120) %}
+    { "url": "https://olivier3lanc.github.io/cinematics-resources/hdp/hdp_{{i}}.webp"}{% if forloop.last == false %},{% endif %}
 {% endfor %}
 ]

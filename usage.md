@@ -28,11 +28,11 @@ Two attributes are mandatory to make Scroll Frames work.
 
 ```html
 EXAMPLE WITH URL MASK
-<div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+<div    scroll-frames="hdp"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp">
 </div>
 EXAMPLE WITH JSON URL
-<div    scroll-frames="matrix"
+<div    scroll-frames="any_id"
         data-json="https://url.com/path/to/file-containing-urls.json">
 </div>
 ```
@@ -46,11 +46,11 @@ If applicable, Scroll Frames allows to use a single string of characters to desc
 
 ```html
 <p>Scroll down and up to watch still frames changing</p>
-<div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+<div    scroll-frames="timelapse"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp">
 </div>
 <style>
-    [scroll-frames="matrix"] { 
+    [scroll-frames="timelapse"] { 
         margin-top: 80vh;
         margin-bottom: 80vh;
         height: 80vh;
@@ -103,11 +103,11 @@ If URL mask is not possible, Scroll Frames supports JSON format. JSON URL can be
 
 ```html
 <p>Scroll down and up to watch still frames changing</p>
-<div    scroll-frames="matrix"
-        data-json="../json/matrix_bullet_time_b.json">
+<div    scroll-frames="hdp"
+        data-json="../json/timelapse_hdp.json">
 </div>
 <style>
-    [scroll-frames="matrix"] { 
+    [scroll-frames="hdp"] { 
         margin-top: 80vh;
         margin-bottom: 80vh;
         height: 80vh;
@@ -144,13 +144,13 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` intersec
 
 ```html
 <p>Frames change in relation with the position of the `hr` element.</p>
-<div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="hdp"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp"
         data-detector="the-detector">
 </div>
 <hr id="the-detector">
 <style>
-    [scroll-frames="matrix"] { 
+    [scroll-frames="hdp"] { 
         height: 80vh;
         background-color: #F5F5F5;
     }
@@ -176,12 +176,12 @@ By default, playback head throughout image sequence is linear during scroll but 
 ```html
 <p>Still frames start changing when element gets 40% (intersection 0.4) in the viewport and stop when element gets 60% (intersection 0.6) in the viewport.</p>
 <p>Scroll down to see.</p>
-<div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="hdp"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp"
         data-keyframes="0:0 to 40:0 to 60:100 to 100:100">
 </div>
 <style>
-    [scroll-frames="matrix"] { 
+    [scroll-frames="hdp"] { 
         height: 80vh;
         margin-top: 80vh;
         margin-bottom: 80vh;
@@ -240,37 +240,37 @@ This setting adjusts position of still frames into the element. Scroll Frames ch
 
 ```html
 <p>Default settings</p>
-<div    scroll-frames="matrix1"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+<div    scroll-frames="hdp1"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp">
 </div>
 
 <p>Background size attribute set to cover</p>
-<div    scroll-frames="matrix5"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="hdp5"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp"
         data-background-size="cover">
 </div>
 
 <p>Background repeat attribute set to repeat</p>
-<div    scroll-frames="matrix2"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="hdp2"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp"
         data-background-repeat="repeat">
 </div>
 
 <p>Background position attribute set to 0%</p>
-<div    scroll-frames="matrix3"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="hdp3"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp"
         data-background-position="0%">
 </div>
 
 <p>Background position attribute set to 100%</p>
-<div    scroll-frames="matrix4"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+<div    scroll-frames="hdp4"
+        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp"
         data-background-position="100%">
 </div>
 
 
 <style>
-    [scroll-frames*="matrix"] { 
+    [scroll-frames*="hdp"] { 
         height: 80vh;
         margin-bottom: 40vh;
         background-color: #F5F5F5;
@@ -294,4 +294,4 @@ Scroll Frames comes with the following methods.
 
 ## Credits
 
-&copy; [The Matrix movie bullet time](https://www.warnerbros.com/movies/matrix)
+&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)
