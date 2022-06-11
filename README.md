@@ -19,10 +19,8 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 * [The simpliest usage](https://olivier3lanc.github.io/Scroll-Frames/example-simpliest-usage.html)
 * [Sticky method](https://olivier3lanc.github.io/Scroll-Frames/example-sticky.html)
 * [Play once fully visible](https://olivier3lanc.github.io/Scroll-Frames/example-play-once-fully-visible.html)
-* [D A R K](https://olivier3lanc.github.io/Scroll-Frames/example-dark.html)
-* [Harry Potter Wand](https://olivier3lanc.github.io/Scroll-Frames/example-harry-potter.html)
-* [Matrix - Morpheus](https://olivier3lanc.github.io/Scroll-Frames/example-matrix-morpheus.html)
 * [Mockup](https://olivier3lanc.github.io/Scroll-Frames/example-mockup.html)
+* [Cinematics](https://olivier3lanc.github.io/Scroll-Frames/example-cinematics.html)
 * [Other examples](https://olivier3lanc.github.io/Scroll-Frames/other-examples.html)
 
 ## Key Features
