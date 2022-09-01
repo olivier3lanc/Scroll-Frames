@@ -45,7 +45,7 @@ metadata:
     # Color must be in HEX, default is LibDoc's color
     #color: '#323b44'
     # Open Graph image file. Can be either relative URL from site root, absolute URL starting with 'http'. Default is LibDoc's splash screen
-    #image: /libdoc/img/libdoc.png
+    image: /img/meta-image.png
 
 # Sidebar 
 sidebar:
@@ -103,7 +103,7 @@ playground:
         # color: '#346cbe'
         # Open Graph image file. Can be either relative URL from site root, absolute URL starting with 'http'. Default is LibDoc's splash screen
         #image: /img/html5_la_casa_de_papel.webp
-        # image: https://preview.tabler.io/static/og.png
+        image: /img/meta-image.png
     # Sets a minimum height for each playground, default is 300px
     #min_height: 600px
     # Style sheets in <head>. Can be either:
