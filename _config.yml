@@ -1,5 +1,10 @@
 # Jekyll configuration
 # ---
+# START # TO USE JEKYLL LIBDOC LOCALLY AS REMOTE THEME
+remote_theme: olivier3lanc/Jekyll-LibDoc
+plugins:
+#   - jekyll-remote-theme
+# END # TO USE JEKYLL LIBDOC LOCALLY AS REMOTE THEME
 title: Scroll Frames # title of the documentation
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
   Animate sequences of still frames on any DOM element in relation with its position into the viewport.
