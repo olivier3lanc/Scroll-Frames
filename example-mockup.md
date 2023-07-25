@@ -1,5 +1,5 @@
 ---
-title: Mockup
+title: 3D Phone Mockup
 description: Use Scroll Frames with animated mockups.
 layout: libdoc/page-split
 category: Examples
@@ -10,7 +10,7 @@ Example with a 3D phone mockup using [keyframes feature](usage.html#keyframes).
 
 ```html
 <div    scroll-frames="mockup"
-        data-url-mask="../img/phone/frame-|1 to 44|.webp"
+        data-url-mask="../../img/phone/frame-|1 to 44|.webp"
         data-keyframes="0:0 to 30:0 to 70:100 to 100:100">
 </div>
 <!-- CSS FOR DEMO PURPOSE ONLY -->
