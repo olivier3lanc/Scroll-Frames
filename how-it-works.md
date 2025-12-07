@@ -21,7 +21,7 @@ Scroll Frames uses CSS to applies still frames as background image on each eleme
 
 ```html
 <div    scroll-frames="timelapse_1"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_albertville/timelapse_albertville_|1 to 120|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/timelapse_albertville/timelapse_albertville_|1 to 120|.webp"
         data-background-size="cover">
     <p>
         <span>Intersection value</span>

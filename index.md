@@ -26,7 +26,7 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 ```html
 <section>
     <div    scroll-frames="demo"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_tamie/timelapse_tamie_|1 to 120|.webp"
+            data-url-mask="https://olivier3lanc.me/cinematics-resources/timelapse_tamie/timelapse_tamie_|1 to 120|.webp"
             data-detector="detector"
             data-background-size="cover">
         <p>Scroll down and up</p>

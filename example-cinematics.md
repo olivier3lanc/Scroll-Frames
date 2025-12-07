@@ -11,7 +11,7 @@ The following still frames sequences were extracted from original movies Blu-Ray
 ```html
 <section>
     <div    scroll-frames="demo"
-            data-url-mask="https://olivier3lanc.github.io/folio-dark/img/particles-b/particles-b-|1 to 101|.webp"
+            data-url-mask="https://olivier3lanc.me/folio-dark/img/particles-b/particles-b-|1 to 101|.webp"
             data-background-size="cover"
             data-detector="the_detector">
     </div>
@@ -38,7 +38,7 @@ The following still frames sequences were extracted from original movies Blu-Ray
 ```html
 <section>
     <div    scroll-frames="demo"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/hp_wand_choice/hp_wand_choice_|1 to 100|.webp"
+            data-url-mask="https://olivier3lanc.me/cinematics-resources/hp_wand_choice/hp_wand_choice_|1 to 100|.webp"
             data-background-size="cover"
             data-detector="the_detector">
     </div>
@@ -65,7 +65,7 @@ The following still frames sequences were extracted from original movies Blu-Ray
 ```html
 <section>
     <div    scroll-frames="demo"
-            data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_morpheus_smith_a/matrix_morpheus_smith_a_|1 to 103|.webp"
+            data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_morpheus_smith_a/matrix_morpheus_smith_a_|1 to 103|.webp"
             data-background-size="cover"
             data-detector="the_detector">
     </div>

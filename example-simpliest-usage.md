@@ -8,7 +8,7 @@ order: 90
 
 ```html
 <div    scroll-frames="any_id"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp">
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/timelapse_hdp/timelapse_hdp_|1 to 120|.webp">
 </div>
 <!-- CSS FOR DEMO PURPOSE ONLY -->
 <style>

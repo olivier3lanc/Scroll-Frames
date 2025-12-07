@@ -2,6 +2,6 @@
 ---
 [
 {% for i in (1..120) %}
-    { "url": "https://olivier3lanc.github.io/cinematics-resources/hdp/hdp_{{i}}.webp"}{% if forloop.last == false %},{% endif %}
+    { "url": "https://olivier3lanc.me/cinematics-resources/hdp/hdp_{{i}}.webp"}{% if forloop.last == false %},{% endif %}
 {% endfor %}
 ]

@@ -2,7 +2,7 @@
 
 ![Logo Scroll Frames](img/logo-scroll-frames.svg)
 
-[Documentation and examples](https://olivier3lanc.github.io/Scroll-Frames/)
+[Documentation and examples](https://olivier3lanc.me/Scroll-Frames/)
 
 Animate sequences of still frames on any DOM element in relation with its position into the viewport.
 
@@ -10,18 +10,18 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 ## Showcase
 
-[![La Casa de Papel](https://github.com/olivier3lanc/folio-casa-de-papel/raw/master/img/html5_la_casa_de_papel.webp)](https://olivier3lanc.github.io/folio-casa-de-papel/)
+[![La Casa de Papel](https://github.com/olivier3lanc/folio-casa-de-papel/raw/master/img/html5_la_casa_de_papel.webp)](https://olivier3lanc.me/folio-casa-de-papel/)
 
-[![D A R K](https://github.com/olivier3lanc/folio-dark/raw/master/img/dark-cinematics.webp)](https://olivier3lanc.github.io/folio-dark/)
+[![D A R K](https://github.com/olivier3lanc/folio-dark/raw/master/img/dark-cinematics.webp)](https://olivier3lanc.me/folio-dark/)
 
 ## Examples
 
-* [The simpliest usage](https://olivier3lanc.github.io/Scroll-Frames/example-simpliest-usage.html)
-* [Sticky method](https://olivier3lanc.github.io/Scroll-Frames/example-sticky.html)
-* [Play once fully visible](https://olivier3lanc.github.io/Scroll-Frames/example-play-once-fully-visible.html)
-* [Mockup](https://olivier3lanc.github.io/Scroll-Frames/example-mockup.html)
-* [Cinematics](https://olivier3lanc.github.io/Scroll-Frames/example-cinematics.html)
-* [Other examples](https://olivier3lanc.github.io/Scroll-Frames/other-examples.html)
+* [The simpliest usage](https://olivier3lanc.me/Scroll-Frames/example-simpliest-usage.html)
+* [Sticky method](https://olivier3lanc.me/Scroll-Frames/example-sticky.html)
+* [Play once fully visible](https://olivier3lanc.me/Scroll-Frames/example-play-once-fully-visible.html)
+* [Mockup](https://olivier3lanc.me/Scroll-Frames/example-mockup.html)
+* [Cinematics](https://olivier3lanc.me/Scroll-Frames/example-cinematics.html)
+* [Other examples](https://olivier3lanc.me/Scroll-Frames/other-examples.html)
 
 ## Key Features
 
@@ -43,9 +43,9 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 
 ## Installation
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/installation.html)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/installation.html)
 
-Include Javascript file `scroll-frames.js` just before the end body tag `</body>`. [Download scroll-frames.js](https://olivier3lanc.github.io/Scroll-Frames/js/scroll-frames.js)
+Include Javascript file `scroll-frames.js` just before the end body tag `</body>`. [Download scroll-frames.js](https://olivier3lanc.me/Scroll-Frames/js/scroll-frames.js)
 
 ```html
 <!-- Required -->
@@ -54,7 +54,7 @@ Include Javascript file `scroll-frames.js` just before the end body tag `</body>
 
 ## Usage
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html)
 
 Scroll Frames can be applied on any HTML element, the script uses the following CSS properties: 
 
@@ -65,7 +65,7 @@ Scroll Frames can be applied on any HTML element, the script uses the following 
 
 ### Basic usage
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#basic-usage)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html#basic-usage)
 
 * `scroll-frames` attribute
 * `data-url-mask` attribute
@@ -79,7 +79,7 @@ Two attributes are mandatory to make Scroll Frames work.
 ```html
 EXAMPLE WITH URL MASK
 <div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
 </div>
 EXAMPLE WITH JSON URL
 <div    scroll-frames="matrix"
@@ -90,7 +90,7 @@ EXAMPLE WITH JSON URL
 
 ### URL mask
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#url-mask)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html#url-mask)
 
 `data-url-mask` attribute
 
@@ -99,7 +99,7 @@ If applicable, Scroll Frames allows to use a single string of characters to desc
 ```html
 <p>Scroll down and up to watch still frames changing</p>
 <div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
 </div>
 <style>
     [scroll-frames="matrix"] { 
@@ -148,7 +148,7 @@ or
 
 ### JSON
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#json)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html#json)
 
 `data-json` attribute
 
@@ -190,7 +190,7 @@ JSON file must be set as follows, each still frame URL can be either absolute or
 
 ### Detector
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#detector)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html#detector)
 
 `data-detector` attribute
 
@@ -199,7 +199,7 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` intersec
 ```html
 <p>Frames change in relation with the position of the `hr` element.</p>
 <div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-detector="the-detector">
 </div>
 <hr id="the-detector">
@@ -222,7 +222,7 @@ By default, Scroll Frames use the specified element `scroll-frame="ID"` intersec
 
 ### Keyframes
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#keyframes)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html#keyframes)
 
 `data-keyframes` attribute
 
@@ -232,7 +232,7 @@ By default, playback head throughout image sequence is linear during scroll but 
 <p>Still frames start changing when element gets 40% (intersection 0.4) in the viewport and stop when element gets 60% (intersection 0.6) in the viewport.</p>
 <p>Scroll down to see.</p>
 <div    scroll-frames="matrix"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-keyframes="0:0 to 40:0 to 60:100 to 100:100">
 </div>
 <style>
@@ -278,7 +278,7 @@ Example
 
 ### Fit and adjust
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/usage.html#fit-and-adjust)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/usage.html#fit-and-adjust)
 
 * `data-background-position` attribute
 * `data-background-repeat` attribute
@@ -295,30 +295,30 @@ This setting adjusts position of still frames into the element. Scroll Frames ch
 ```html
 <p>Default settings</p>
 <div    scroll-frames="matrix1"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp">
 </div>
 
 <p>Background size attribute set to cover</p>
 <div    scroll-frames="matrix5"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-background-size="cover">
 </div>
 
 <p>Background repeat attribute set to repeat</p>
 <div    scroll-frames="matrix2"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-background-repeat="repeat">
 </div>
 
 <p>Background position attribute set to 0%</p>
 <div    scroll-frames="matrix3"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-background-position="0%">
 </div>
 
 <p>Background position attribute set to 100%</p>
 <div    scroll-frames="matrix4"
-        data-url-mask="https://olivier3lanc.github.io/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
+        data-url-mask="https://olivier3lanc.me/cinematics-resources/matrix_bullet_time_b/matrix_bullet_time_b_|1 to 197|.webp"
         data-background-position="100%">
 </div>
 <style>
@@ -345,7 +345,7 @@ Scroll Frames comes with the following methods.
 
 ## Image format support
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/image-format-support.html)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/image-format-support.html)
 
 Scroll Frames supports browser supported images formats including modern ones like WebP.
 
@@ -379,7 +379,7 @@ AVIF | The most powerful image compression but low brower support [learn more](h
 
 ## Performances
 
-[Documentation](https://olivier3lanc.github.io/Scroll-Frames/performances.html)
+[Documentation](https://olivier3lanc.me/Scroll-Frames/performances.html)
 
 Scroll Frames applies still images on DOM elements, so bandwidth and performances are affected in relation with:
 
