@@ -294,4 +294,4 @@ Scroll Frames comes with the following methods.
 
 ## Credits
 
-&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)
+&copy; Timelapses by [Olive White Photographies](https://www.olivewhite.com)
