@@ -58,4 +58,4 @@ Scroll Frames is a javascript library intended to be used for cinematic usage on
 ```
 {:.playground title="Timelapse example"}
 
-&copy; [Timelapses by Olivier 3lanc](https://github.com/olivier3lanc/photographies)
+&copy; Timelapses by [Olive White Photographies](https://www.olivewhite.com)
